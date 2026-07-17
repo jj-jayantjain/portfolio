@@ -1,0 +1,352 @@
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> <svg class="icon" style="width:11px;height:11px;"><use href="#i-arrow-right"/></svg> Projects</div>
+    <div class="eyebrow"><span class="tag-path">// projects.case-studies</span></div>
+    <h1>Case studies from eight enterprise engagements.</h1>
+    <p class="lede">Filter by technology, client or year — or search directly. Expand any card for the full case study: objective, architecture, challenges, solution and business impact.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+
+    <div class="filter-bar reveal">
+      <div class="search-field">
+        <svg class="icon"><use href="#i-search"/></svg>
+        <input type="text" id="projectSearch" placeholder="Search projects, clients, technologies…" aria-label="Search projects">
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-group" id="techFilters" aria-label="Filter by technology">
+        <button class="pill-filter active" data-group="tech" data-value="all">All tech</button>
+        <button class="pill-filter" data-group="tech" data-value="eds">Adobe EDS</button>
+        <button class="pill-filter" data-group="tech" data-value="aem">AEM</button>
+        <button class="pill-filter" data-group="tech" data-value="fusion">Workfront Fusion</button>
+        <button class="pill-filter" data-group="tech" data-value="genai">GenAI / OpenAI</button>
+        <button class="pill-filter" data-group="tech" data-value="commerce">Commerce / GraphQL</button>
+        <button class="pill-filter" data-group="tech" data-value="solr">Search / Solr</button>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-group" id="clientFilters" aria-label="Filter by client">
+        <button class="pill-filter active" data-group="client" data-value="all">All clients</button>
+        <button class="pill-filter" data-group="client" data-value="american-university">American University</button>
+        <button class="pill-filter" data-group="client" data-value="credera">Credera Internal</button>
+        <button class="pill-filter" data-group="client" data-value="abbott">Abbott</button>
+        <button class="pill-filter" data-group="client" data-value="tlc-digitech">TLC Digitech</button>
+        <button class="pill-filter" data-group="client" data-value="lululemon">Lululemon</button>
+        <button class="pill-filter" data-group="client" data-value="mg-motors">MG Motors</button>
+        <button class="pill-filter" data-group="client" data-value="apple">Apple</button>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-group" id="yearFilters" aria-label="Filter by year">
+        <button class="pill-filter active" data-group="year" data-value="all">All years</button>
+        <button class="pill-filter" data-group="year" data-value="2025-2026">2025–26</button>
+        <button class="pill-filter" data-group="year" data-value="2022-2024">2022–24</button>
+        <button class="pill-filter" data-group="year" data-value="2016-2021">2016–21</button>
+      </div>
+    </div>
+    <p class="subtle mono" id="resultsCount" style="margin:-8px 0 26px;"></p>
+
+    <div class="grid grid-3" id="projectsGrid">
+
+      <!-- 1 -->
+      <div class="card project-card" data-tech="eds aem" data-client="american-university" data-year="2025-2026" data-search="american university commonspot adobe eds migration team lead javascript html css git">
+        <div class="p-thumb"><svg class="icon"><use href="#i-box"/></svg></div>
+        <span class="p-client">American University · 2025–2026</span>
+        <h3>CommonSpot → Adobe EDS Migration</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-users"/></svg> Team Lead, 4 devs</span></div>
+        <p>End-to-end migration of the university's website from CommonSpot CMS to Adobe Edge Delivery Services.</p>
+        <div class="p-tags"><span class="tag on-blueprint">Adobe EDS</span><span class="tag">JavaScript</span><span class="tag">AEM</span><span class="tag">Git</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Replace an aging CommonSpot CMS with Adobe Edge Delivery Services to modernize content architecture, improve page performance, and give editorial teams a faster publishing workflow.</p>
+          <h4>Architecture overview</h4>
+          <p>Content authored in a document-based source (Google Docs/SharePoint) compiled into static, edge-cached HTML via EDS's block pipeline — with reusable, independently-versioned blocks replacing CommonSpot's monolithic templates.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Led a cross-functional team of 4 developers — code reviews, sprint/task planning, deployment coordination.</li>
+            <li>Designed and built reusable static and dynamic EDS blocks for consistent page assembly.</li>
+            <li>Integrated required third-party services while keeping delivery secure and on-schedule.</li>
+            <li>Partnered with business stakeholders to translate requirements into scalable EDS solutions.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>Migrating years of accumulated CommonSpot templates and editorial habits without disrupting an active publishing calendar, across a distributed university content team.</p>
+          <h4>Solution</h4>
+          <p>A phased, block-by-block migration strategy: build and validate each reusable block in isolation, run both systems in parallel per section, and cut over section-by-section rather than in one release.</p>
+          <h4>Business impact</h4>
+          <p>Faster page loads, a simpler editorial workflow, and a component library the university's own team can extend after handover — all delivered by a team of 4 under my technical leadership.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — client-owned, private</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="card project-card" data-tech="fusion genai" data-client="credera" data-year="2025-2026" data-search="credera internal workfront fusion openai genai automation json rest http">
+        <div class="p-thumb"><svg class="icon"><use href="#i-workflow"/></svg></div>
+        <span class="p-client">Credera Internal · 2025</span>
+        <h3>GenAI Workflow Automation with OpenAI</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-cpu"/></svg> OpenAI API</span></div>
+        <p>Adobe Workfront Fusion wired to the OpenAI API for event-driven, end-to-end workflow automation.</p>
+        <div class="p-tags"><span class="tag on-brass">Workfront Fusion</span><span class="tag on-brass">OpenAI API</span><span class="tag">REST/JSON</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Remove manual handling from a recurring request-and-response workflow inside Adobe Workfront by generating contextual AI responses automatically from structured form input.</p>
+          <h4>Architecture overview</h4>
+          <p>Custom Workfront forms trigger Fusion scenarios via Watch Events; Fusion reads the record, transforms it to JSON, calls the OpenAI API with a curated prompt template, then writes the generated response back into Workfront custom fields — a closed request-to-response loop.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Designed and configured Adobe Workfront custom forms for Projects and Requests.</li>
+            <li>Built Fusion scenarios using Watch Events, Read Record, HTTP, Parse/Transform/Create JSON and Update Record modules.</li>
+            <li>Engineered the GenAI integration layer between Fusion and the OpenAI API.</li>
+            <li>Built filters, error-handling routes and execution logic for fault-tolerant, production-grade automation.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>LLM responses needed to be reliable enough for a production workflow — handling malformed API responses, rate limits, and edge cases without silently failing a request.</p>
+          <h4>Solution</h4>
+          <p>A layered error-handling design in Fusion: dedicated error routes per module, JSON schema validation before writing back to Workfront, and prompt templates curated per request type to keep output format consistent.</p>
+          <h4>Business impact</h4>
+          <p>A fully automated, event-driven request-to-response cycle — cutting manual turnaround time and giving the team a reusable pattern for future GenAI-in-workflow projects.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — internal project, private</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="card project-card" data-tech="aem commerce" data-client="abbott" data-year="2022-2024" data-search="abbott anapollo glucerna store magento commerce graphql ecommerce">
+        <div class="p-thumb"><svg class="icon"><use href="#i-database"/></svg></div>
+        <span class="p-client">Abbott · 2022–2024</span>
+        <h3>ANAPOLLO — Abbott Store &amp; Glucerna Store</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-database"/></svg> Magento · GraphQL</span></div>
+        <p>Enterprise eCommerce delivery integrating Magento Commerce with custom AEM components.</p>
+        <div class="p-tags"><span class="tag on-blueprint">AEM Cloud SDK</span><span class="tag">GraphQL</span><span class="tag">Adobe Commerce</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Deliver a full eCommerce experience for the Abbott Store and Glucerna Store, unifying Magento commerce data with AEM-driven content and components.</p>
+          <h4>Architecture overview</h4>
+          <p>AEM front-end components consuming customer and order data from Magento Commerce (MBO) via GraphQL, with custom dynamic components rendering commerce state alongside authored content.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Owned analysis, solution design, estimation and development end-to-end.</li>
+            <li>Integrated Magento Commerce (MBO) customer/order data via GraphQL into AEM components.</li>
+            <li>Built customized dynamic components for the eCommerce site.</li>
+            <li>Implemented custom JS/CSS for login, CAPTCHA and third-party integrations.</li>
+            <li>Wrote JUnit test coverage using AEM context and Mockito.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>Keeping commerce data (pricing, inventory, order status) in sync and performant inside an AEM-rendered page without introducing latency or stale-state bugs.</p>
+          <h4>Solution</h4>
+          <p>GraphQL queries scoped tightly to each component's data needs, combined with test coverage (JUnit + Mockito against AEM context) to catch integration regressions before release.</p>
+          <h4>Business impact</h4>
+          <p>A reliable, secure eCommerce experience across two consumer storefronts, with authentication and third-party integrations delivered alongside the commerce build.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — client-owned, private</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="card project-card" data-tech="aem solr" data-client="credera" data-year="2022-2024" data-search="credera internal accelerator solr connector indexing facets featured results">
+        <div class="p-thumb"><svg class="icon"><use href="#i-cpu"/></svg></div>
+        <span class="p-client">Credera Internal · 2022</span>
+        <h3>Internal Accelerator — AEM Solr Connector</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-target"/></svg> Search infrastructure</span></div>
+        <p>Enhanced AEM-Solr connector core features: indexing, query boosting, and facets.</p>
+        <div class="p-tags"><span class="tag">AEM 6.5</span><span class="tag">Apache Solr</span><span class="tag">JUnit</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Improve the internal AEM-Solr search connector used across client accelerators — faster indexing, more relevant results, and broader Solr deployment support.</p>
+          <h4>Architecture overview</h4>
+          <p>A connector layer between AEM's content repository and Apache Solr, handling collection indexing, query boosting, and facet generation, compatible with both Solr standalone and Solr Cloud deployments.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Enhanced core connector features: collection indexing and query boosting integrated with AEM.</li>
+            <li>Developed content page auto-indexing, facets, and featured-results tooling.</li>
+            <li>Improved JUnit coverage and code quality, and validated Solr standalone/Cloud compatibility.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>The connector needed to behave consistently whether a client ran Solr standalone or Solr Cloud — two deployment modes with different indexing behavior.</p>
+          <h4>Solution</h4>
+          <p>Abstracted the indexing and query-boosting logic behind a compatibility layer, tested against both deployment modes, with an expanded JUnit suite to catch regressions early.</p>
+          <h4>Business impact</h4>
+          <p>A more reliable, reusable search accelerator for future AEM engagements — reducing the setup cost of adding faceted search to new client builds.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — internal accelerator, private</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="card project-card" data-tech="aem" data-client="tlc-digitech" data-year="2016-2021" data-search="tlc digitech premium hotels membership programs sling models rest api payment mulesoft salesforce">
+        <div class="p-thumb"><svg class="icon"><use href="#i-briefcase"/></svg></div>
+        <span class="p-client">TLC Digitech · 2019–2022</span>
+        <h3>Membership Programs for Premium Hotels</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-users"/></svg> AEM Lead</span></div>
+        <p>End-to-end AEM ownership for a premium hotel membership platform, including payments and mobile APIs.</p>
+        <div class="p-tags"><span class="tag">AEM 6.4</span><span class="tag">Sling Models</span><span class="tag">Mulesoft</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Build and maintain a membership platform for a premium hotel brand, supporting web and mobile experiences with integrated payments and CRM data.</p>
+          <h4>Architecture overview</h4>
+          <p>AEM templates and Sling Models/Exporters serving both the web front-end and a content-exporter API layer for mobile apps, integrated with Salesforce (SFDC) and Mulesoft for CRM and system connectivity.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Developed and customized AEM static and dynamic components against business requirements.</li>
+            <li>Built AEM templates, Sling Models, Sling Exporters, Sling Servlets, schedulers, REST APIs and payment integration.</li>
+            <li>Served as Team Leader, owning all project activities end-to-end.</li>
+            <li>Developed content exporter APIs for the program's mobile apps.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>The same content needed to serve a responsive website and a separate mobile app consistently, without duplicating authoring effort.</p>
+          <h4>Solution</h4>
+          <p>Sling Exporters providing a clean JSON content API consumed by the mobile app, so authors maintained content once in AEM while both channels stayed in sync.</p>
+          <h4>Business impact</h4>
+          <p>A single content source powering web, mobile and payment flows for a premium membership program, delivered under my end-to-end technical ownership as AEM Lead.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — client-owned, private</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="card project-card" data-tech="aem" data-client="lululemon" data-year="2016-2021" data-search="lululemon athletica dam assets digital asset management video renditions schedulers">
+        <div class="p-thumb"><svg class="icon"><use href="#i-layers"/></svg></div>
+        <span class="p-client">Lululemon Athletica · 2018–2019</span>
+        <h3>Lululemon DAM — Assets</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-zap"/></svg> DAM performance</span></div>
+        <p>AEM Asset API work to improve Digital Asset Management performance and safeguards.</p>
+        <div class="p-tags"><span class="tag">AEM 6.4</span><span class="tag">Asset API</span><span class="tag">Schedulers</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Improve performance and safety of Lululemon's AEM Digital Asset Management environment, which handled high volumes of product and marketing media.</p>
+          <h4>Architecture overview</h4>
+          <p>AEM Asset API-driven tooling for video rendition generation, auto-publish workflow steps, and scheduler-based automation of recurring DAM maintenance tasks.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Worked with the AEM Asset API and ran R&amp;D within DAM to increase performance.</li>
+            <li>Configured video renditions and auto-publish behavior within workflow.</li>
+            <li>Developed a new trash-button feature to prevent permanent asset deletion.</li>
+            <li>Built schedulers to automate recurring DAM activities.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>High-volume asset processing (especially video) was creating workflow bottlenecks, and accidental permanent deletions were a recurring operational risk.</p>
+          <h4>Solution</h4>
+          <p>Optimized the rendition/auto-publish workflow steps for throughput, and added a soft-delete "trash" mechanism so assets could be recovered instead of permanently lost.</p>
+          <h4>Business impact</h4>
+          <p>Fewer DAM performance bottlenecks and a safer deletion workflow for a brand with a constant, high-volume flow of marketing assets.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — client-owned, private</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="card project-card" data-tech="aem" data-client="mg-motors" data-year="2016-2021" data-search="mg motors india static dynamic components workflow third party api">
+        <div class="p-thumb"><svg class="icon"><use href="#i-terminal"/></svg></div>
+        <span class="p-client">MG Motors India · 2017–2018</span>
+        <h3>MG Motors — Component &amp; Workflow Development</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-code"/></svg> AEM Developer</span></div>
+        <p>Static/dynamic component development and third-party API integration for MG Motors India.</p>
+        <div class="p-tags"><span class="tag">AEM 6.4</span><span class="tag">JDK 11</span><span class="tag">Postman</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Build out the AEM component library and editorial workflow for MG Motors India's digital presence as the brand scaled its market entry.</p>
+          <h4>Architecture overview</h4>
+          <p>Standard AEM component and template architecture with custom workflow steps for content approval, plus third-party API integrations for marketing and lead-capture tooling.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Handled analysis, design and development of static and dynamic components.</li>
+            <li>Built out workflow development for editorial and publishing processes.</li>
+            <li>Delivered third-party API integrations for the marketing site.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>Rapidly evolving marketing requirements during a market-entry campaign meant components needed to be flexible without becoming unmaintainable.</p>
+          <h4>Solution</h4>
+          <p>Component APIs designed with clear configuration boundaries, keeping campaign-specific variation in content rather than code.</p>
+          <h4>Business impact</h4>
+          <p>A maintainable component library that kept pace with an active regional launch campaign.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — client-owned, private</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="card project-card" data-tech="aem" data-client="apple" data-year="2016-2021" data-search="apple incorporation rcm migration code optimization osgi scr annotations eclipse">
+        <div class="p-thumb"><svg class="icon"><use href="#i-git-branch"/></svg></div>
+        <span class="p-client">Apple Incorporation · 2016–2017</span>
+        <h3>RCM — Migration &amp; Code Optimization</h3>
+        <div class="p-meta"><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-git-branch"/></svg> AEM 6.1 → 6.3</span></div>
+        <p>AEM version migration with code optimization and OSGi annotation modernization.</p>
+        <div class="p-tags"><span class="tag">AEM 6.3</span><span class="tag">JDK 8</span><span class="tag">Eclipse IDE</span></div>
+        <button class="card-link expand-toggle" data-expand>View case study <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+        <div class="project-detail">
+          <h4>Business objective</h4>
+          <p>Migrate the RCM platform from AEM 6.1 to AEM 6.3 while optimizing existing code and removing deprecated patterns.</p>
+          <h4>Architecture overview</h4>
+          <p>Component and template layer modernized from legacy SCR annotations to OSGi annotations as part of the version upgrade, aligning the codebase with AEM 6.3's supported patterns.</p>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Developed and customized various AEM components against evolving requirements.</li>
+            <li>Migrated the platform from AEM 6.1 to AEM 6.3, with code optimization along the way.</li>
+            <li>Enhanced templates and components while migrating from SCR to OSGi annotations.</li>
+          </ul>
+          <h4>Challenge</h4>
+          <p>Years of accumulated SCR-annotation components needed to move to OSGi without breaking existing page functionality mid-migration.</p>
+          <h4>Solution</h4>
+          <p>A component-by-component migration and regression-testing pass, validating each converted component against its pre-migration behavior before moving to the next.</p>
+          <h4>Business impact</h4>
+          <p>A modernized, more maintainable codebase on a supported AEM version — my first engagement, and the foundation the rest of this career was built on.</p>
+          <h4>Assets</h4>
+          <div class="p-tags">
+            <span class="tag mono">Screenshots — add project imagery</span>
+            <span class="tag mono">Architecture diagram — add visual</span>
+            <span class="tag mono">Repository — client-owned, private</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="no-results" id="noResults" style="display:none;">No projects match those filters — try clearing search or picking "All".</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Curious how one of these was actually built?</h2>
+      <p>Happy to walk through architecture decisions, trade-offs, or the code itself.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Ask me about a project <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,93 @@
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> <svg class="icon" style="width:11px;height:11px;"><use href="#i-arrow-right"/></svg> Blog</div>
+    <div class="eyebrow"><span class="tag-path">// blog.posts</span></div>
+    <h1>Notes from the field.</h1>
+    <p class="lede">Short, practical write-ups on Adobe EDS, Workfront automation, GenAI integration and AEM performance — the questions that come up most in client conversations.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="tag" style="border-style:dashed; margin-bottom:36px; display:inline-flex;">
+      <svg class="icon" style="width:13px;height:13px;"><use href="#i-file-text"/></svg>
+      Sample articles below — ready for a real CMS (or hand-written posts) to replace them.
+    </div>
+
+    <div class="grid grid-1" style="gap:18px; grid-template-columns:1fr;">
+
+      <div class="card blog-card">
+        <div class="blog-meta"><span class="tag on-blueprint">Adobe EDS</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-calendar"/></svg> Jun 2026</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-clock"/></svg> 6 min read</span></div>
+        <h3>Migrating from a legacy CMS to Adobe Edge Delivery Services</h3>
+        <p>A field guide to planning a CommonSpot-to-EDS migration without breaking editorial workflows mid-flight.</p>
+        <div class="blog-body">
+          <p style="margin-top:14px; font-size:14.5px;">The hardest part of any CMS migration isn't the code — it's keeping an active editorial team publishing while the ground shifts underneath them. When moving a large site to Adobe Edge Delivery Services, the approach that's worked best is a phased, block-by-block cutover: build and validate each reusable block in isolation, run both systems in parallel per site section, and migrate section-by-section instead of flipping a single switch. That keeps the blast radius small if something breaks, and gives editors time to adjust to a new authoring model without a hard deadline looming over every page. The other lesson: invest early in a documented block library. It pays for itself the moment a second developer joins the migration.</p>
+        </div>
+        <button class="card-link blog-toggle">Read more <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+      </div>
+
+      <div class="card blog-card">
+        <div class="blog-meta"><span class="tag on-brass">GenAI</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-calendar"/></svg> Apr 2025</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-clock"/></svg> 7 min read</span></div>
+        <h3>Wiring OpenAI into Workfront Fusion, safely</h3>
+        <p>Prompt templates, error-handling routes, and mapping AI output back into custom fields without breaking production.</p>
+        <div class="blog-body">
+          <p style="margin-top:14px; font-size:14.5px;">Connecting a large language model to a production workflow tool sounds simple until you consider what happens when the API times out mid-scenario, or returns something that doesn't match your expected JSON shape. The pattern that held up: treat the OpenAI call as just another unreliable network dependency. Wrap it in Fusion's error-handling routes, validate the response shape before writing anything back to Workfront custom fields, and keep prompt templates narrow and structured per request type rather than one generic prompt trying to handle everything. The result is a request-to-response loop that's fully automated but fails loudly and safely instead of silently corrupting a record.</p>
+        </div>
+        <button class="card-link blog-toggle">Read more <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+      </div>
+
+      <div class="card blog-card">
+        <div class="blog-meta"><span class="tag">Performance</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-calendar"/></svg> Feb 2025</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-clock"/></svg> 5 min read</span></div>
+        <h3>What actually moves the needle on AEM page speed</h3>
+        <p>Component-level lessons from optimizing DAM-heavy, asset-dense enterprise pages.</p>
+        <div class="blog-body">
+          <p style="margin-top:14px; font-size:14.5px;">Most AEM performance advice starts and ends with "enable dispatcher caching," which is true but incomplete. The bigger wins tend to live at the component level: lazy-loading below-the-fold components, trimming what a Sling Model actually resolves versus what the template requests, and being deliberate about DAM rendition sizes rather than shipping the largest available asset and letting CSS shrink it. On asset-heavy commerce and DAM-driven sites specifically, auto-publish and rendition-generation workflows are worth auditing directly — that's usually where hidden bottlenecks live, not in the render pipeline itself.</p>
+        </div>
+        <button class="card-link blog-toggle">Read more <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+      </div>
+
+      <div class="card blog-card">
+        <div class="blog-meta"><span class="tag on-brass">Workfront</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-calendar"/></svg> Mar 2025</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-clock"/></svg> 6 min read</span></div>
+        <h3>From custom forms to Fusion scenarios: a practical Workfront guide</h3>
+        <p>How Watch Events, Read Record and Update Record modules fit together in a real automation build.</p>
+        <div class="blog-body">
+          <p style="margin-top:14px; font-size:14.5px;">Adobe Workfront Fusion scenarios can sprawl quickly if you design them reactively. Starting from a clear custom-form schema first — deciding exactly what fields trigger what downstream action — makes the Fusion side much simpler to build and debug later. A Watch Event should map to one clear trigger condition, Read Record should pull only what the next step needs, and Update Record should write back the smallest possible diff. That discipline is what keeps a scenario debuggable six months later, when you're the one trying to remember why a particular branch exists.</p>
+        </div>
+        <button class="card-link blog-toggle">Read more <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+      </div>
+
+      <div class="card blog-card">
+        <div class="blog-meta"><span class="tag">APIs</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-calendar"/></svg> Nov 2024</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-clock"/></svg> 5 min read</span></div>
+        <h3>REST vs. GraphQL inside an AEM component</h3>
+        <p>Picking the right integration pattern when a component needs live commerce data.</p>
+        <div class="blog-body">
+          <p style="margin-top:14px; font-size:14.5px;">On the Abbott commerce build, the deciding factor wasn't "GraphQL is newer" — it was that each AEM component needed a different, narrow slice of order and customer data, and REST endpoints would have meant either over-fetching or maintaining a dozen bespoke endpoints. GraphQL let each component request exactly its own shape from Magento Commerce without backend changes every time a new component needed a new field. REST still wins for simpler, single-purpose integrations where the query flexibility isn't worth the added complexity — it's a trade-off, not a default.</p>
+        </div>
+        <button class="card-link blog-toggle">Read more <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+      </div>
+
+      <div class="card blog-card">
+        <div class="blog-meta"><span class="tag">Java</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-calendar"/></svg> Aug 2023</span><span><svg class="icon" style="width:12px;height:12px;"><use href="#i-clock"/></svg> 6 min read</span></div>
+        <h3>Java patterns that hold up inside AEM</h3>
+        <p>Writing testable, maintainable Java in a framework that doesn't always make it easy.</p>
+        <div class="blog-body">
+          <p style="margin-top:14px; font-size:14.5px;">AEM's OSGi/Sling foundation rewards Java code that stays small and single-purpose — Sling Models with a narrow injection surface are far easier to unit test with Mockito and AEM's testing context than a monolithic servlet doing five things at once. The habit that's paid off most: writing JUnit coverage against the AEM mock context from day one of a component, not retrofitted after a bug report. It catches integration regressions — especially around resource resolution and OSGi service references — long before QA does.</p>
+        </div>
+        <button class="card-link blog-toggle">Read more <svg class="icon"><use href="#i-chevron-down"/></svg></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Have a topic you'd like covered?</h2>
+      <p>Happy to write up a specific AEM, EDS or Workfront problem if it'd be useful.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Suggest a topic <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>

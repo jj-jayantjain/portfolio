@@ -1,0 +1,125 @@
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> <svg class="icon" style="width:11px;height:11px;"><use href="#i-arrow-right"/></svg> Contact</div>
+    <div class="eyebrow"><span class="tag-path">// contact.form</span></div>
+    <h1>Let's talk about your platform.</h1>
+    <p class="lede">Migration, automation build, or just a second opinion on an AEM architecture decision — reach out below.</p>
+  </div>
+</section>
+
+<section style="padding-top:10px;">
+  <div class="container two-col">
+
+    <div class="reveal">
+      <!-- PLACEHOLDER: replace with real contact details before publishing -->
+      <div class="contact-info-card">
+        <div class="card-icon" style="margin-bottom:0;"><svg class="icon"><use href="#i-mail"/></svg></div>
+        <div>
+          <p class="subtle mono" style="margin-bottom:4px;">EMAIL</p>
+          <a href="mailto:hello@jayantjain.dev">hello@jayantjain.dev</a>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="card-icon" style="margin-bottom:0;"><svg class="icon"><use href="#i-phone"/></svg></div>
+        <div>
+          <p class="subtle mono" style="margin-bottom:4px;">PHONE</p>
+          <a href="tel:+911234567890">+91 12345 67890</a>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="card-icon" style="margin-bottom:0;"><svg class="icon"><use href="#i-map-pin"/></svg></div>
+        <div>
+          <p class="subtle mono" style="margin-bottom:4px;">LOCATION</p>
+          <span style="font-weight:600;">New Delhi, India</span> <span class="subtle">(Remote-friendly)</span>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="card-icon" style="margin-bottom:0;"><svg class="icon"><use href="#i-linkedin"/></svg></div>
+        <div>
+          <p class="subtle mono" style="margin-bottom:4px;">LINKEDIN</p>
+          <a href="https://linkedin.com/in/jayant-jain" target="_blank" rel="noopener">linkedin.com/in/jayant-jain</a>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="card-icon" style="margin-bottom:0;"><svg class="icon"><use href="#i-github"/></svg></div>
+        <div>
+          <p class="subtle mono" style="margin-bottom:4px;">GITHUB</p>
+          <a href="https://github.com/jayantjain" target="_blank" rel="noopener">github.com/jayantjain</a>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="card-icon" style="margin-bottom:0;"><svg class="icon"><use href="#i-globe"/></svg></div>
+        <div>
+          <p class="subtle mono" style="margin-bottom:4px;">WEBSITE</p>
+          <a href="https://jayantjain.dev" target="_blank" rel="noopener">jayantjain.dev</a>
+        </div>
+      </div>
+
+      <div class="map-placeholder" style="margin-top:8px;">
+        <svg class="icon"><use href="#i-map-pin"/></svg>
+        <span>Map embed placeholder — drop in a Google Maps iframe for<br>New Delhi, India when ready.</span>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:.1s;">
+      <div class="card" style="padding:32px;">
+        <h3 style="margin-bottom:6px;">Send a message</h3>
+        <p style="margin-bottom:24px; font-size:14px;">This opens your email app with the message pre-filled — nothing is sent from this page directly.</p>
+        <form id="contactForm" novalidate>
+          <div class="honeypot"><label for="cf-company">Company</label><input type="text" id="cf-company" name="company" tabindex="-1" autocomplete="off"></div>
+          <div class="field-row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" required placeholder="Your full name">
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" required placeholder="you@company.com">
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-reason">Reason for reaching out</label>
+            <select id="cf-reason" name="reason">
+              <option>Project inquiry</option>
+              <option>Full-time / contract role</option>
+              <option>Speaking or writing</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required placeholder="Tell me a bit about the project or role…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Send message <svg class="icon"><use href="#i-send"/></svg>
+          </button>
+          <p class="form-note">Prefer email directly? Reach me at <a href="mailto:hello@jayantjain.dev" style="color:var(--blueprint); font-weight:600;">hello@jayantjain.dev</a>.</p>
+          <p class="form-status" id="formStatus">Opening your email client…</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--ink-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;"><span>Before you write in</span></div>
+      <h2>Quick answers</h2>
+    </div>
+    <div class="grid grid-3 reveal-stagger">
+      <div class="card">
+        <h3 style="font-size:16px;">What's the typical response time?</h3>
+        <p style="font-size:14px;">Usually within 1–2 business days.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:16px;">Do you take short-term or advisory engagements?</h3>
+        <p style="font-size:14px;">Yes — architecture reviews and scoped consulting are both options.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:16px;">Remote or on-site?</h3>
+        <p style="font-size:14px;">Remote-first, with on-site availability for the right engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
